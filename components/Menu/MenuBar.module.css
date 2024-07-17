@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 1.125em; /* 18px */
+  padding-bottom: 1.125em; /* 18px */
+  border-bottom: 1.5px solid var(--header-line-5);
+  background: var(--line-10-lm);
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.header > div:first-child {
+  flex: 1;
+}
+
+.linkContainer {
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+  gap: 4.325rem; /* 70 px abstand */
+}
+
+.header > div:last-child {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.light .linkContainer a {
+  color: var(--text-primary-lm);
+}
+
+.dark .linkContainer a {
+  color: var(--text-primary-dm);
+}

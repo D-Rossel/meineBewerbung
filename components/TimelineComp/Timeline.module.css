@@ -1,0 +1,27 @@
+.backgroundLightmode {
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.backgroundDarkmode {
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.container {
+  padding-top: 10%;
+}
+
+.ueb {
+  text-align: center;
+  padding: 50px;
+}
+
+.h3_backgroundDarkmode{
+  color: white;
+}
+
+.h3_backgroundLightmode{
+  color:black;
+}
+  

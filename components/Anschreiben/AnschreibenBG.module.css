@@ -1,0 +1,50 @@
+.backgroundImage {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Verhindert das Scrollen aus dem Hintergrund heraus */
+}
+.container {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.backgroundLightmode {
+  /* background-image: url("../../public/Images/start.png"); */
+  background-color: var(--bg-lm);
+}
+
+.backgroundDarkmode {
+  /* background-image: url("../../public/Images/start.png"); */
+  background-color: var(--bg-dm);
+}
+
+.container {
+  margin-top: 5%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  position: relative; /* Position relativ für die Absolute Positionierung des Inhalts */
+  z-index: 1; /* Stellt sicher, dass der Inhalt über dem Hintergrund liegt */
+  overflow: auto; /* Scrollen im Container aktivieren, wenn Inhalt größer als Container ist */
+  max-height: calc(100vh - 10%); /* Maximalhöhe des Containers auf 90% der Bildschirmhöhe begrenzen */
+  padding: 2rem; /* Innenabstand für den Inhalt hinzufügen */
+}
+
+.p1_backgroundDarkmode{
+  color: var(--text-primary-dm);
+  white-space: pre-wrap;
+  font-size: 1em;
+}
+
+.p1_backgroundLightmode {
+  color: var(--text-primary-lm);
+  white-space: pre-wrap; 
+  font-size: 1.1em;
+}

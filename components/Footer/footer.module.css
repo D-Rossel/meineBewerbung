@@ -1,0 +1,60 @@
+.footer {
+  display: flex;
+  flex-direction: column; /* Ändere dies, wenn du vertikale Anordnung benötigst */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 5vw;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  overflow: hidden; /* Verhindert, dass der Pseudo-Element-Inhalt überläuft */
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: -50px; /* Negative Wert, um über den Footer hinauszugehen */
+  left: 0;
+  right: 0;
+  height: 50px; /* Höhe des Übergangsbereichs */
+  background: inherit;
+  filter: blur(20px);
+}
+
+.footerLinkContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.spacer {
+  flex: auto;
+  width: 150px;
+}
+
+.footerContainerDarkMode {
+  background-color: var(--black);
+}
+
+.footerContainerDarkMode::before {
+  background: linear-gradient(to bottom, transparent, var(--black));
+}
+
+.footerContainerLightMode {
+  background-color: var(--white);
+}
+
+.footerContainerLightMode::before {
+  background: linear-gradient(to bottom, transparent, var(--white));
+}
+
+.footerContainerLightMode a {
+  color: var(--text-primary-lm);
+}
+
+.footerContainerDarkMode a {
+  color: var(--text-primary-dm);
+}

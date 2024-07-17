@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/fonts/Roboto-Regular.ttf');
+  /* Weitere Formate hinzufügen, falls erforderlich */
+  font-family: 'Roboto-Thin';
+  src: url('/fonts/Roboto-Thin');
+}
+
+:root {
+  /* COLORS BOTH LIGHT & DARK */
+  --primary: #003E19;
+  --gradient-tag-dm: linear-gradient(155deg, #D1EDE1 0%, #028C6A 10%, #028C6A 90%, #D1EDE1 100%);
+  --gradient-tag-lm: linear-gradient(135deg, rgba(63,58,136,1) 0%, #D1EDE1 40%, rgba(25,85,182,1) 95%);
+  --white: #FFFFFF;
+  --black: #000000;
+
+  /* COLORS LIGHT */
+  --text-primary-lm: var(--black);
+  --text-secondary-lm: var(--black);
+  --module-bg-lm: #E6E7EF;
+  --bg-lm:#D1EDE1;
+  --line-10-lm: rgba(0,0,0,0.1);
+
+  /* COLORS DARK */
+  --text-primary-dm: var(--white);
+  --text-secondary-dm: var(--white);
+  --bg-dm: #6E8BB3;
+}
+
+.bg_Darkmode{
+  background: hsla(240, 25%, 2%, 1);
+  background: linear-gradient(315deg, hsla(240, 25%, 2%, 1) 44%, hsla(215, 31%, 57%, 1) 100%);
+  background: -moz-linear-gradient(315deg, hsla(240, 25%, 2%, 1) 44%, hsla(215, 31%, 57%, 1) 100%); 
+  background: -webkit-linear-gradient(315deg, hsla(240, 25%, 2%, 1) 44%, hsla(215, 31%, 57%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#030305", endColorstr="#6E8BB3", GradientType=1 );
+}
+
+.bg_Lightmode{
+  background: hsla(154, 44%, 87%, 1);
+  background: linear-gradient(315deg, hsla(154, 44%, 87%, 1) 9%, hsla(165, 97%, 28%, 1) 100%);
+  background: -moz-linear-gradient(315deg, hsla(154, 44%, 87%, 1) 9%, hsla(165, 97%, 28%, 1) 100%);
+  background: -webkit-linear-gradient(315deg, hsla(154, 44%, 87%, 1) 9%, hsla(165, 97%, 28%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D1EDE1", endColorstr="#028C6A", GradientType=1 );
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONTS */
+
+
+h1 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 5em; /* 80px */
+  font-style: normal;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2 {
+  font-family:  "Roboto-Regular", sans-serif;
+  font-size: 2.5em; /* 40px */
+  font-style: normal;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+h2.regular, .h2regular {
+  font-family:  "Roboto-Regular", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.875em; /* 30px */
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+}
+
+h4 {
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 1.1em; /* 30px */
+  font-style: normal;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* COPY */
+p, span, textarea, label, input{
+  font-family:  "Roboto-Regular", sans-serif;
+  font-size: 1.5em; /* 24px */
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  /* line-height: 2em; 32px */
+  /* margin: 0; */
+}
+
+/* COPY MEDIUM */
+p.medium, span.medium, textarea.medium, button.medium, button {
+  font-family:  "Roboto-Regular", sans-serif;
+}
+
+/* TAGLINE MEDIUM */
+p.tagline-medium, span.tagline-medium, .tagline-medium , label.tagline-medium{
+  font-family:  "Roboto-Regular", sans-serif;
+  font-size: 1.45em;
+  line-height: 3.0em;
+  text-decoration: none;
+}
+
+/* TAGLINE REGULAR */
+p.tagline-regular, span.tagline-regular, .tagline-regular {
+  font-family:  "Roboto-Regular", sans-serif;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* COPY-INLINE-LINK */
+a.inline-link {
+  font-family:  "Roboto-Regular", sans-serif;
+  font-size: 2em;/*1.5em; /* 24px */
+  font-style: normal;
+  line-height: 2em; /* 32px */
+}
+
+td, th {
+  font-family:  "Roboto-Regular", sans-serif;
+  font-size: 1em; /* 24px */
+  font-style: normal;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/* SPACINGS */
+
+.section-spacing-lr {
+  padding: 0 5vw; /* 100px l/r */
+}
+
+.no-margin {
+  margin: 0px;
+  padding: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}

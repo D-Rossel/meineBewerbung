@@ -1,0 +1,27 @@
+.logo {
+    width: 10em;
+    height: 5em; 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .logoLM {
+    background-image: url("/Images/logo_david_lm.png");
+  }
+  
+  .logoDM {
+    background-image: url("/Images/logo_david_dm.png");
+  }
+
+  .light .linkContainer a {
+    color: var(--text-primary-lm);
+  }
+  
+  .dark .linkContainer a {
+    color: var(--text-primary-dm);
+  }
+  

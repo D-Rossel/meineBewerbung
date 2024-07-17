@@ -1,0 +1,136 @@
+.pageContainer {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  padding-top: 3.9%;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.containerLight {
+  color: var(--text-primary-lm);
+}
+
+.containerDark {
+  color: var(--text-primary-dm);
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.headerCell {
+  padding: 20px 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.headerCell:hover {
+  opacity: 0.8;
+}
+
+.headerCell::after {
+  content: '▼';
+  margin-left: 5px;
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+
+.headerCell.sorted-asc::after {
+  content: '▲';
+  opacity: 1;
+}
+
+.headerCell.sorted-desc::after {
+  content: '▼';
+  opacity: 1;
+}
+
+.cell {
+  padding: 20px 15px;
+  transition: all 0.3s ease;
+}
+
+.evenRow .cell:first-child,
+.oddRow .cell:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.evenRow .cell:last-child,
+.oddRow .cell:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.evenRow, .oddRow {
+  transition: all 0.3s ease;
+}
+
+.evenRow:hover .cell,
+.oddRow:hover .cell {
+  transform: translateY(-5px);
+}
+
+/* Light Mode Styles */
+.tableLight .headerCell {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.tableLight .cell {
+  background-color: var(--white);
+}
+
+.tableLight .evenRow {
+  background-color: var(--module-bg-lm);
+}
+
+.tableLight .oddRow {
+  background-color: var(--white);
+}
+
+/* Dark Mode Styles */
+.tableDark .headerCell {
+  color: var(--white);
+  border-bottom-color: var(--white);
+}
+
+.tableDark .cell {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tableDark .evenRow,
+.tableDark .oddRow {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tableDark .evenRow:hover .cell,
+.tableDark .oddRow:hover .cell {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .table {
+    font-size: 14px;
+  }
+  
+  .headerCell, .cell {
+    padding: 15px 10px;
+  }
+}

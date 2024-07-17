@@ -1,0 +1,79 @@
+.background {
+  display: flex;
+  width: 5.5em; /* 88px */
+  height: 3em; /* 48px; */
+  justify-content: flex-end;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 500px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+
+.background.light {
+  background: var(--line-10-lm);
+}
+
+.background.dark {
+  background: var(--bg-dm);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+  position: relative;
+  border: none;
+}
+
+.buttonContainer.light {
+  background-color: var(--white);
+  transform: translateX(calc(100% - 4px)); /* Verschiebt den Container nach rechts */
+}
+
+.buttonContainer.dark {
+  background-color: var(--black);
+  transform: translateX(0); /* Standardposition */
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: transparent;
+  border: none; /* Entfernt jegliche Ränder */
+}
+
+.button::before {
+  z-index: -1;
+}
+
+.button.dark::before {
+  background: var(--header-bg-5);
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  border: none; /* Entfernt jegliche Ränder */
+}

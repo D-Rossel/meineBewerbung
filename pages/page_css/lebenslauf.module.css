@@ -1,0 +1,15 @@
+
+.backgroundLightmode {
+  /* background-image: url('/meinebewerbung/public/Images/start.png'); */
+  background-color: var(--bg-lm);
+  }
+  
+.backgroundDarkmode {
+  /* background-image: url('/meinebewerbung/public/Images/start.png'); */
+  background-color: var(--bg-dm);
+  }
+
+  .container{
+    width: 100vw;
+    height: 100%;
+  }
