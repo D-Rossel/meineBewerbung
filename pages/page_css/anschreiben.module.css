@@ -1,8 +1,8 @@
 .containerLight {
-    background-color: var(--bg-lm);
+    color: var(--bg-lm);
 }
   
 .containerDark {
-    background-color: var(--black);
+    color: var(--black);
 }
   

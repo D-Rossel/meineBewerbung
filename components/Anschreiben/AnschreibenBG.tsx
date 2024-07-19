@@ -49,7 +49,7 @@ ${firmenData.anschreiben.unterschrift}
   `;
 
   return (
-    <div className={`${styles.backgroundImage} ${themeContext.theme === 'light' ? 'bg_Lightmode' : 'bg_Darkmode'}`} id="about">
+    <div className={`${styles.backgroundImage}`} id="about">
       <div className={styles.container}>
         <pre className={`${themeContext.theme === 'light' ? styles.p1_backgroundLightmode : styles.p1_backgroundDarkmode}`}>
           <TypewriterText text={anschreibenText} speed={5} />

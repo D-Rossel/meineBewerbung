@@ -97,10 +97,7 @@
   background-color: var(--white);
 }
 
-.tableLight .evenRow {
-  background-color: var(--module-bg-lm);
-}
-
+.tableLight .evenRow
 .tableLight .oddRow {
   background-color: var(--white);
 }

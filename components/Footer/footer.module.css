@@ -1,22 +1,22 @@
 .footer {
   display: flex;
-  flex-direction: column; /* Ändere dies, wenn du vertikale Anordnung benötigst */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   padding: 1rem 5vw;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  overflow: hidden; /* Verhindert, dass der Pseudo-Element-Inhalt überläuft */
+  overflow: hidden;
 }
 
 .footer::before {
   content: '';
   position: absolute;
-  top: -50px; /* Negative Wert, um über den Footer hinauszugehen */
+  top: -50px;
   left: 0;
   right: 0;
-  height: 50px; /* Höhe des Übergangsbereichs */
+  height: 50px;
   background: inherit;
   filter: blur(20px);
 }
@@ -35,20 +35,8 @@
   width: 150px;
 }
 
-.footerContainerDarkMode {
-  background-color: var(--black);
-}
-
-.footerContainerDarkMode::before {
-  background: linear-gradient(to bottom, transparent, var(--black));
-}
-
-.footerContainerLightMode {
-  background-color: var(--white);
-}
-
-.footerContainerLightMode::before {
-  background: linear-gradient(to bottom, transparent, var(--white));
+.footerContainerDarkMode, .footerContainerLightMode {
+  background-color: transparent;
 }
 
 .footerContainerLightMode a {
@@ -57,4 +45,20 @@
 
 .footerContainerDarkMode a {
   color: var(--text-primary-dm);
+}
+
+.horizontalLine {
+  height: 1px;
+  width: 100%; 
+  background-color: var(--black);
+  margin: 10px 0;
+  opacity: 0.4;
+}
+
+.horizontalLineLM {
+  background-color: var(--black);
+}
+
+.horizontalLineDM {
+  background-color: var(--white);
 }

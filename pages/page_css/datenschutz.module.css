@@ -1,0 +1,38 @@
+.container{
+    
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+
+.container h1{
+    padding-bottom: 2rem;
+}
+
+.container h2{
+    padding-bottom: 2rem;
+}
+
+.container h3{
+    padding-bottom: 2rem;
+}
+
+.container h4{
+    padding-bottom: 2rem;
+}
+
+.container p{
+    padding-bottom: 1rem;
+}
+
+.light{
+    color: var(--black);
+}
+
+.dark{
+    color: var(--white);
+}

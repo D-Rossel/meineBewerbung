@@ -31,7 +31,7 @@ const data = [
   ["5","Wahlmodul B", "_", 5, "noch ausstehend"],
   ["7","Portfolio", "Berdux", 10, "noch nicht benotet"],
   ["6","Berufspraktische Tätigkeit", "Weitz", 30, "wird nicht benotet"],
-  ["7","Wahlmodul Internationalisierung", "_", 5, "noch ausstehend"],
+  ["7","Wahlmodul Internationalisierung", "_", 5, "unbenotet"],
   ["7","Bachelor-Thesis", "_", 15, "noch ausstehend"]
 
 
@@ -66,8 +66,7 @@ export default function Notenspigel() {
   };
 
   return (
-    <div className={`${styles.pageContainer} ${theme === 'light' ? styles.containerLight : styles.containerDark}
-    ${theme === 'light' ? 'bg_Lightmode' : 'bg_Darkmode'}`}>
+    <div className={`${styles.pageContainer} ${theme === 'light' ? styles.containerLight : styles.containerDark}`}>
       <div className={styles.container}>
         <div className={styles.tableContainer}>
           <table className={`${styles.table} ${theme === 'light' ? styles.tableLight : styles.tableDark}`}>

@@ -99,7 +99,7 @@ export default function Timeline() {
           contentArrowStyle={theme === "light" ? arrowL : arrowD}
           icon={<School/>}
         >
-          <h3 className="vertical-timeline-element-title">Studium - Informatik</h3>
+          <h3 className="vertical-timeline-element-title">Studium – Informatik</h3>
           <h4 className="vertical-timeline-element-subtitle">Technische Universität Darmstadt, Darmstadt</h4>
           <p>Studiengang: Informatik (nicht abgeschlossenes Studium)
           </p>
@@ -112,7 +112,7 @@ export default function Timeline() {
           contentArrowStyle={theme === "light" ? arrowL : arrowD}
           icon={<School/>}
         >
-          <h3 className="vertical-timeline-element-title">Studium - Medieninformatik</h3>
+          <h3 className="vertical-timeline-element-title">Studium – Medieninformatik</h3>
           <h4 className="vertical-timeline-element-subtitle">Hochschule RheinMain, Wiesbaden</h4>
           <p>
           Studiengang: Medieninformatik <br/>
@@ -186,7 +186,7 @@ export default function Timeline() {
       >
         <h3 className="vertical-timeline-element-title">Tanzlehrer</h3>
         <h4 className="vertical-timeline-element-subtitle">Freiberuflich</h4>
-        <p>Tanzworkshops an Schulischen einrichtungen</p>
+        <p>Tanzworkshops an schulischen Einrichtungen</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
@@ -198,7 +198,7 @@ export default function Timeline() {
       >
         <h3 className="vertical-timeline-element-title">Werkstudent</h3>
         <h4 className="vertical-timeline-element-subtitle">Willis Towers Watson - Wettinerstraße 3, 65189 Wiesbaden</h4>
-        <p>“Testautomatisierung, Unit Testing”</p>
+        <p>„Testautomatisierung, Unit Testing“</p>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"

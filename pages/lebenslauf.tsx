@@ -9,7 +9,7 @@ import Timeline from "@/components/TimelineComp/Timeline";
 export default function lebenslauf(){
   const themeContext = useThemeContext();
   return (
-    <div className={`${themeContext.theme === "light" ? "bg_Lightmode" : "bg_Darkmode"}`}>
+    <div>
         <div className={styles.container}>
          <Timeline />
         </div>

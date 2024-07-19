@@ -4,7 +4,6 @@ import styles from "@/components/Logo/logo.module.css";
 import { useThemeContext } from "@/context/ThemeContext";
 
 export default function logo(){
-
     const { theme } = useThemeContext();
     const router = useRouter();
 

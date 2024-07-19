@@ -7,7 +7,7 @@ export default function Contact() {
     const { theme } = useThemeContext();
 
     return (
-        <div className={`${styles.container} ${theme === 'light' ? 'bg_Lightmode' :'bg_Darkmode'}`}>
+        <div className={`${styles.container}`}>
             <div className={`${styles.contactContent} ${theme === 'light' ? styles.contentLight : styles.contentDark}`}>
                 <h3 className={`${theme === 'light' ? styles.contentLM : styles.contentDM}`}>Kontaktinformationen</h3>
                 <div className={styles.contactInfo}>
@@ -29,8 +29,8 @@ export default function Contact() {
                     <div className={styles.contactItem}>
                         <FaPhone className={`${styles.contactIcon} ${theme === 'light' ? styles.contentLM : styles.contentDM}`} />
                         <div className={`${styles.contactText} ${theme === 'light' ? styles.contentLM : styles.contentDM}`}>
-                            <p>01632357276</p>
-                            <p>0611/8110391</p>
+                            <p>0163 2357276</p>
+                            <p>0611 8110391</p>
                         </div>
                     </div>
                 </div>
