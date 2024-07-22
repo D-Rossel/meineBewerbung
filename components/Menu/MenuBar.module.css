@@ -13,8 +13,32 @@
   z-index: 999;
 }
 
+.overlay{
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.nonOverlay{
+  display: flex;
+}
+
 .header > div:first-child {
   flex: 1;
+}
+
+.burgerMenu{
+  height: 100%;
+  width: auto;
+  background-size: contain;
+  padding: 0;
+  cursor: pointer;
+  background-color: grey !important;
+  border-radius: 50%;
+  border: none !important;
 }
 
 .linkContainer {
@@ -36,4 +60,74 @@
 
 .dark .linkContainer a {
   color: var(--text-primary-dm);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .header {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .overlay{
+    display: flex;
+  }
+
+  .nonOverlay{
+    display: none;
+  }
+
+  .linkContainer {
+    gap: 3rem; /* Reduced gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 0.875em;
+    padding-bottom: 0.875em;
+  }
+
+  .overlay{
+    display: flex;
+    justify-content: center;
+  }
+
+  .nonOverlay{
+    display: none;
+  }
+
+  .linkContainer {
+    gap: 2rem; /* Further reduced gap */
+  }
+
+  .header > div:first-child,
+  .header > div:last-child {
+    flex: 0 1 auto; /* Adjust flex to accommodate smaller screens */
+  }
+}
+
+@media (max-width: 430px) {
+  .header {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    flex-wrap: wrap; /* Allow wrapping for very small screens */
+  }
+
+  .linkContainer {
+    flex: 1 0 100%; /* Full width on small screens */
+    order: 3; /* Move links to bottom */
+    justify-content: space-around; /* Spread links evenly */
+    gap: 1rem; /* Minimal gap */
+    margin-top: 0.5em; /* Add some space above links */
+  }
+
+  .header > div:first-child,
+  .header > div:last-child {
+    flex: 1 0 auto; /* Allow these to take necessary space */
+  }
+
+  .header > div:last-child {
+    justify-content: flex-end; /* Ensure right alignment */
+  }
 }

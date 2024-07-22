@@ -7,7 +7,6 @@
   padding: 1rem 5vw;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  overflow: hidden;
 }
 
 .footer::before {
@@ -28,6 +27,8 @@
   gap: 2.5rem;
   width: 100%;
   flex-grow: 1;
+  
+  font-size: small;
 }
 
 .spacer {

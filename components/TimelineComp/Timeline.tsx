@@ -10,7 +10,7 @@ import Work from "@/public/Icons/work.svg"
 export default function Timeline() {
   const { theme } = useThemeContext();
   const boxL = {
-    background:  '#7BC5AE',
+    background:  '#DCDCDC',
     color: '#000',
   };
 
@@ -21,7 +21,7 @@ export default function Timeline() {
 
   const arrowL = {
     borderRight: '7px solid',
-    color:  '#7BC5AE', 
+    color:  '#DCDCDC', 
   };
 
   const arrowD = {
@@ -30,7 +30,7 @@ export default function Timeline() {
   };
 
   const circleL = {
-    background:  '#7BC5AE',
+    background:  '#DCDCDC',
     color: '#000',
   };
 

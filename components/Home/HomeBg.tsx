@@ -11,9 +11,9 @@ export function HomeBG () {
         <h1 className={isLight ? styles.h1_backgroundLightmode : styles.h1_backgroundDarkmode}>
           Hallo, ich bin David.
         </h1>
-        <h3 className={isLight ? styles.h1_backgroundLightmode : styles.h1_backgroundDarkmode}>
+        <h4 className={isLight ? styles.h1_backgroundLightmode : styles.h1_backgroundDarkmode}>
           Ich bin Student an der Hochschule RheinMain und möchte mich bei Ihnen bewerben.
-        </h3>
+        </h4>
 
         <table className={styles.table}>
           <thead>

@@ -36,17 +36,18 @@
 }
 
 .bg_Lightmode{
-  background: hsla(154, 44%, 87%, 1);
-  background: linear-gradient(315deg, hsla(154, 44%, 87%, 1) 9%, hsla(165, 97%, 28%, 1) 100%);
-  background: -moz-linear-gradient(315deg, hsla(154, 44%, 87%, 1) 9%, hsla(165, 97%, 28%, 1) 100%);
-  background: -webkit-linear-gradient(315deg, hsla(154, 44%, 87%, 1) 9%, hsla(165, 97%, 28%, 1) 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D1EDE1", endColorstr="#028C6A", GradientType=1 );
+  background: hsla(215, 31%, 57%, 1);
+  background: linear-gradient(315deg, hsla(215, 31%, 57%, 1) 6%, hsla(0, 0%, 96%, 1) 100%);
+  background: -moz-linear-gradient(315deg, hsla(215, 31%, 57%, 1) 6%, hsla(0, 0%, 96%, 1) 100%);  
+  background: -webkit-linear-gradient(315deg, hsla(215, 31%, 57%, 1) 6%, hsla(0, 0%, 96%, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#6E8BB3", endColorstr="#F5F5F5", GradientType=1 );
 }
 
 
 body, html {
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
 }
 
 /* FONTS */
@@ -138,6 +139,12 @@ a.inline-link {
 
 td, th {
   font-family:  "Roboto-Regular", sans-serif;
+  font-size: 1em; /* 24px */
+  font-style: normal;
+}
+
+li{
+  font-family:  "Roboto-Thin", sans-serif;
   font-size: 1em; /* 24px */
   font-style: normal;
 }

@@ -1,0 +1,40 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.overlayContent {
+  padding: 20px;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 1.3rem;
+  right: 1.3rem;
+  background-size: content;
+  width: 10%;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.overlay li{
+  list-style-type: none;
+  font-size: large;
+}
+
+.light{
+  color: var(--black);
+}
+
+.dark{
+  color: var(--white)
+}

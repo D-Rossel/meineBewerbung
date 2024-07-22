@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styles from '@/pages/page_css/notenspigel.module.css';
 import { useThemeContext } from '@/context/ThemeContext';
 
-
 const data = [
   ["1","Einführung in die Medieninformatik", "Calvus", 5, "2,0"],
   ["1","Programmieren 1", "Berdux", 7, "2,0"],
@@ -24,23 +23,21 @@ const data = [
   ["4","Animation", "Ederer", 6, "1,7"],
   ["5","Softwaretechnik-Projekt", "Weitz", 10, "2,0"],
   ["5","Mensch-Computer-Interaktion", "Berdux", 6, "2,0"],
-  ["4","Computergrafik", "Schwanecke", 6, "noch nicht benotet"],
-  ["4","Rechnernetze und Betriebssysteme", "Schaible", 6, "noch nicht benotet"],
-  ["4","Webbasierte Anwendungen ", "Weitz", 6, "noch nicht benotet"],
-  ["5","Web-Engineering", "Hoyer, Heide", 10, "noch nicht benotet"],
-  ["5","Wahlmodul B", "_", 5, "noch ausstehend"],
-  ["7","Portfolio", "Berdux", 10, "noch nicht benotet"],
-  ["6","Berufspraktische Tätigkeit", "Weitz", 30, "wird nicht benotet"],
-  ["7","Wahlmodul Internationalisierung", "_", 5, "unbenotet"],
-  ["7","Bachelor-Thesis", "_", 15, "noch ausstehend"]
-
-
+  ["4","Computergrafik", "Schwanecke", 6, "NE"],
+  ["4","Rechnernetze und Betriebssysteme", "Schaible", 6, "NE"],
+  ["4","Webbasierte Anwendungen ", "Weitz", 6, "NE"],
+  ["5","Web-Engineering", "Hoyer, Heide", 10, "NE"],
+  ["5","Wahlmodul B", "_", 5, "NA"],
+  ["7","Portfolio", "Berdux", 10, "NE"],
+  ["6","Berufspraktische Tätigkeit", "Weitz", 30, "U"],
+  ["7","Wahlmodul Internationalisierung", "_", 5, "U"],
+  ["7","Bachelor-Thesis", "_", 15, "NA"]
 ];
 
 export default function Notenspigel() {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
-
   const { theme } = useThemeContext();
+
   const sortedData = React.useMemo(() => {
     let sortableItems = [...data];
     if (sortConfig.key !== null) {
@@ -93,6 +90,13 @@ export default function Notenspigel() {
               ))}
             </tbody>
           </table>
+          <div className={`${styles.legend} ${theme === 'light' ? styles.legendLight : styles.legendDark}`}>
+              <ul>
+                <li><strong>NE</strong> – Note noch nicht eingetragen</li>
+                <li><strong>U</strong> – Bleibt Unbenotet</li>
+                <li><strong>NA</strong> – Noch Ausstehend</li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
