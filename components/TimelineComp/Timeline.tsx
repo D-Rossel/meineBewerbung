@@ -61,7 +61,7 @@ export default function Timeline() {
       contentArrowStyle={theme === "light" ? arrowL : arrowD}
       icon={<School/>}
     >
-      <h3 className="vertical-timeline-element-title">Grundschule</h3>
+      <h3 className="vertical-timeline-element-title">Grundschule, Sonnenschule</h3>
       <h4 className="vertical-timeline-element-subtitle">Ziegelhüttenweg, 65232 Taunusstein</h4>
     </VerticalTimelineElement>
         <VerticalTimelineElement

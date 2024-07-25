@@ -35,16 +35,28 @@
   overflow: auto; /* Scrollen im Container aktivieren, wenn Inhalt größer als Container ist */
   max-height: calc(100vh - 10%); /* Maximalhöhe des Containers auf 90% der Bildschirmhöhe begrenzen */
   padding: 2rem; /* Innenabstand für den Inhalt hinzufügen */
+  font-size: 1em;
 }
 
 .p1_backgroundDarkmode{
   color: var(--text-primary-dm);
   white-space: pre-wrap;
-  font-size: 1em;
 }
 
 .p1_backgroundLightmode {
   color: var(--text-primary-lm);
   white-space: pre-wrap; 
-  font-size: 1.1em;
+}
+
+@media (max-width: 1200px) {
+  .container{
+    font-size: small;
+  }
+}
+
+
+@media (max-width: 850px) {
+  .container{
+    font-size: x-small;
+  }
 }

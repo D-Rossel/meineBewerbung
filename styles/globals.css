@@ -8,7 +8,7 @@
 
 :root {
   /* COLORS BOTH LIGHT & DARK */
-  --primary: #003E19;
+  --primary: #6E8BB3;
   --gradient-tag-dm: linear-gradient(155deg, #D1EDE1 0%, #028C6A 10%, #028C6A 90%, #D1EDE1 100%);
   --gradient-tag-lm: linear-gradient(135deg, rgba(63,58,136,1) 0%, #D1EDE1 40%, rgba(25,85,182,1) 95%);
   --white: #FFFFFF;
@@ -171,4 +171,122 @@ a:visited {
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 3.75em; /* 60px */
+  }
+
+  h2 {
+    font-size: 1.625em; /* 26px */
+  }
+
+  h2.regular {
+    font-size: 1.625em; /* 26px */
+  }
+
+  h3 {
+    font-size: 1.75em; /* 28px */
+  }
+
+  p,
+  span,
+  textarea,
+  label,
+  input,
+  a.inline-link {
+    font-size: 1.25em; /* 20px */
+    line-height: 1.5em; /* 24px */
+  }
+
+  p.tagline-medium,
+  span.tagline-medium,
+  .tagline-medium,
+  label.tagline-medium,
+  p.tagline-regular,
+  span.tagline-regular,
+  .tagline-regular {
+    font-size: 1em; /* 18px */
+  }
+}
+
+@media (max-width: 835px) {
+  h1 {
+    font-size: 3.5em; /* 56px */
+  }
+
+  h2 {
+    font-size: 2em; /* 32px */
+  }
+
+  h2.regular {
+    font-size: 2em; /* 32px */
+  }
+
+  h3 {
+    font-size: 1.625em; /* 26px */
+  }
+
+  p,
+  span,
+  textarea,
+  label,
+  input,
+  a.inline-link {
+    font-size: 1.25em; /* 20px */
+    line-height: 1.75em; /* 28px */
+  }
+
+  p.tagline-medium,
+  span.tagline-medium,
+  .tagline-medium,
+  label.tagline-medium,
+  p.tagline-regular,
+  span.tagline-regular,
+  .tagline-regular {
+    font-size: 1.125em; /* 18px */
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 2.125em; /* 34px */
+  }
+
+  h2 {
+    font-size: 1.625em; /* 26px */
+  }
+
+  h2.regular {
+    font-size: 1.375em; /* 22px */
+  }
+
+  h3 {
+    font-size: 1.25em; /* 20px */
+  }
+
+  p,
+  span,
+  textarea,
+  label,
+  input,
+  a.inline-link {
+    font-size: 1.125em; /* 18px */
+    line-height: normal;
+  }
+
+  p.tagline-medium,
+  span.tagline-medium,
+  .tagline-medium,
+  label.tagline-medium,
+  p.tagline-regular,
+  span.tagline-regular,
+  .tagline-regular {
+    font-size: 1em; /* 16px */
+  }
 }

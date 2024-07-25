@@ -91,11 +91,17 @@
     padding-top: 15%;
   }
 
+  .mecontainer{
+    height: 50vh;
+    padding-bottom: 0%;
+  }
+
   .me {
-    width: 90%;
-    height: 70%;
+    width: 500%;
+    height: auto;
     background-size: contain;
     background-position: center;
+    margin: 0rem;
   }
 
   .table {
@@ -118,7 +124,7 @@
 
   .me {
     width: 100%;
-    height: 60%;
+    height: auto;
     background-size: contain;
     background-position: center;
   }
@@ -138,13 +144,14 @@
 
 @media (max-width: 430px) {
   .mecontainer {
+    width: 100%;
     height: auto;
     padding-top: 0%;
   }
 
   .textContainer {
     width: 100%;
-    padding-top: 25%;
+    padding-top: 45%;
   }
 
   .me {

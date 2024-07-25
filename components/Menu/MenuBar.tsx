@@ -25,7 +25,7 @@ export default function Menu() {
     return (
         <div>
             <div className={`${styles.header} section-spacing-lr ${theme === 'dark' ? styles.dark : styles.light}`}> 
-                <Logo /> 
+                <div className={styles.logo}><Logo /> </div>
                 <div > 
                 <div className={styles.overlay}> 
                     <button className={styles.burgerMenu} onClick={toggleOverlay}> {whichBurgerMenu(theme)} </button> 
