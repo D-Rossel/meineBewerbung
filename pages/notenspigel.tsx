@@ -35,7 +35,7 @@ const data = [
 ];
 
 export default function Notenspigel() {
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: 'ascending' });
+  const [sortConfig, setSortConfig] = useState({ key: 0, direction: 'ascending' });
   const { theme } = useThemeContext();
 
   const sortedData = React.useMemo(() => {
@@ -54,7 +54,7 @@ export default function Notenspigel() {
     return sortableItems;
   }, [data, sortConfig]);
 
-  const requestSort = (key) => {
+  const requestSort = (key : number) => {
     let direction = 'ascending';
     if (sortConfig.key === key && sortConfig.direction === 'ascending') {
       direction = 'descending';

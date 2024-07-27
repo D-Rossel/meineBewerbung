@@ -1,79 +1,73 @@
 .container {
-  padding-top: 8rem;
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
+  align-items: flex-end;
 }
 
-.light{
+.light {
   color: var(--black);
 }
 
-.dark{
+.dark {
   color: var(--white);
-}
-
-.containerLight {
-  background-color: var(--white);
-  color: var(--black);
-}
-
-.containerDark {
-  background-color: var(--primary);
-  color: var(--white);
-}
-
-.title {
-  font-size: 3em;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 1.2em;
-  margin-bottom: 40px;
 }
 
 .contactContent {
-  max-width: 1100px;
-  width: 100%;
-  border-radius: 20px;
-  padding: 40px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  position: relative;
+  max-width: 25rem;
+  padding: 10rem;
+  margin: 5rem;
+  box-shadow: 0 1rem 2rem 0 transparent;
+}
 
-  margin: 6rem;
+.light .contactContent {
+  border-top: 4px solid var(--black);
+  border-left: 4px solid var(--black);
+  border-top-left-radius: 50%; 
+}
+
+.dark .contactContent {
+  border-top: 4px solid var(--white);
+  border-left: 4px solid var(--white);
+  /* border-bottom: 4px solid var(--white);
+  border-bottom-left-radius: 50%;*/
+  border-top-left-radius: 50%; 
 }
 
 .contactInfo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 9rem;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contactItem {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  width: max-content;
-  line-height: 1.5;
+  text-align: left;
+  padding-top: rem;
 }
 
 .contactIcon {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 1.5em;
+  margin-right: 15px;
+}
+
+.dark .contactIcon {
+  color: var(--white);
+}
+
+.light .contactIcon {
   color: var(--black);
 }
 
 .contactText h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.1em;
+  margin-bottom: 5px;
 }
 
 .contactText p {
-  margin: 5px 0;
+  margin: 2px 0;
 }
 
 .contactText a {
@@ -85,8 +79,69 @@
   text-decoration: underline;
 }
 
+.me {
+  background-image: url("../../public/Images/me.png");
+  width: 30%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 5rem;
+  top: 6rem;
+  bottom: 0;
+  z-index: 10;
+}
+
+.mecontainer {
+  display: flex;
+  position: left;
+  padding-top: 6.2%;
+}
+
 @media (max-width: 768px) {
-  .contactInfo {
-    grid-template-columns: 1fr;
+  .container {
+    align-items: center;
   }
+
+  .contactContent {
+    max-width: 90%;
+  }
+
+  .me {
+    width: 100%;
+    height: 50vh;
+    background-position: center bottom;
+  }
+}
+
+
+
+
+
+
+.curvedText {
+  position: fixed;
+  top: -10px;
+  left: -60px;
+  width: 120%;
+  height: 120%;
+  fill: none;
+}
+
+.curvedText path {
+  fill: none;
+}
+
+.curvedText text {
+  fill: var(--black);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.dark .curvedText text {
+  fill: var(--white);
+}
+
+.light .curvedText text {
+  fill: var(--black);
 }
