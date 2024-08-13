@@ -1,11 +1,13 @@
-import React from "react";
+// pages/_app.tsx
+import React, { useEffect, useState } from "react";
 import { ThemeContextProvider, useThemeContext } from "@/context/ThemeContext";
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
 import Menubar from "@/components/Menu/MenuBar";
 import Footer from '@/components/Footer/footer';
 import { useRouter } from 'next/router';
+import { OverlayProvider } from '@/context/OverlayContext';
 import prefixes from '@/prefixes.json';
+import type { AppProps } from "next/app";
 
 function AppContent({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -39,10 +41,13 @@ function AppContent({ Component, pageProps }: AppProps) {
   );
 }
 
+
 export default function App(props: AppProps) {
   return (
     <ThemeContextProvider>
-      <AppContent {...props} />
+        <OverlayProvider>
+        <AppContent {...props} />
+        </OverlayProvider>
     </ThemeContextProvider>
   );
 }

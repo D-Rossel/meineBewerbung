@@ -1,7 +1,9 @@
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+    position: relative;
+    flex-direction: row;
+    align-content: space-around;
+    height: 100vh;
 }
 
 .light {
@@ -13,29 +15,12 @@
 }
 
 .contactContent {
-  position: relative;
-  max-width: 25rem;
-  padding: 10rem;
-  margin: 5rem;
+  margin: 7rem;
   box-shadow: 0 1rem 2rem 0 transparent;
 }
 
-.light .contactContent {
-  border-top: 4px solid var(--black);
-  border-left: 4px solid var(--black);
-  border-top-left-radius: 50%; 
-}
-
-.dark .contactContent {
-  border-top: 4px solid var(--white);
-  border-left: 4px solid var(--white);
-  /* border-bottom: 4px solid var(--white);
-  border-bottom-left-radius: 50%;*/
-  border-top-left-radius: 50%; 
-}
-
 .contactInfo {
-  padding: 0rem;
+  padding: 10rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -45,12 +30,13 @@
   display: flex;
   align-items: center;
   text-align: left;
-  padding-top: rem;
+  padding-top: 0rem;
 }
 
 .contactIcon {
   font-size: 1.5em;
   margin-right: 15px;
+  line-height: 1.9rem;
 }
 
 .dark .contactIcon {
@@ -64,6 +50,7 @@
 .contactText h3 {
   font-size: 1.1em;
   margin-bottom: 5px;
+  white-space: nowrap;
 }
 
 .contactText p {
@@ -72,32 +59,53 @@
 
 .contactText a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .contactText a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .me {
   background-image: url("../../public/Images/me.png");
-  width: 30%;
-  height: auto;
+  width: 700px;
+  height: 800px;
   background-size: contain;
   background-repeat: no-repeat;
-  position: absolute;
-  left: 5rem;
-  top: 6rem;
-  bottom: 0;
-  z-index: 10;
+  background-position: center;
+  background-origin: content-box;
+  right: 0;
+  padding-left: 5rem;
 }
 
 .mecontainer {
-  display: flex;
-  position: left;
   padding-top: 6.2%;
 }
 
+/* Media Queries für verschiedene Bildschirmgrößen */
+
+/* Für Bildschirme bis zu 1200px */
+@media (max-width: 1200px) {
+  .container {
+    align-items: center;
+  }
+
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mecontainer {
+    display: none;
+  }
+
+  .contactInfo {
+    padding: 10rem;
+  }
+
+}
+
+/* Für Bildschirme bis zu 768px */
 @media (max-width: 768px) {
   .container {
     align-items: center;
@@ -105,43 +113,35 @@
 
   .contactContent {
     max-width: 90%;
+    margin: 3rem;
   }
 
-  .me {
-    width: 100%;
-    height: 50vh;
-    background-position: center bottom;
+  .mecontainer {
+    display: none;
+  }
+  
+  .contactInfo {
+    padding: 0rem;
   }
 }
 
+/* Für Bildschirme bis zu 430px */
+@media (max-width: 430px) {
+  .container {
+    align-items: center;
+  }
 
+  .contactContent {
+    max-width: 95%;
+    margin: 2rem;
+    padding-top: 15%;
+  }
 
-
-
-
-.curvedText {
-  position: fixed;
-  top: -10px;
-  left: -60px;
-  width: 120%;
-  height: 120%;
-  fill: none;
-}
-
-.curvedText path {
-  fill: none;
-}
-
-.curvedText text {
-  fill: var(--black);
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.dark .curvedText text {
-  fill: var(--white);
-}
-
-.light .curvedText text {
-  fill: var(--black);
+  .mecontainer {
+    display: none;
+  }
+  
+  .contactInfo {
+    padding: 0rem;
+  }
 }

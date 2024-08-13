@@ -25,7 +25,6 @@
 
 .nonOverlay{
   display: flex;
-
   justify-content: space-evenly;
 }
 
@@ -34,14 +33,14 @@
 }
 
 .logo{
-  z-index: 1000;
+  z-index: 1001;
 }
 
 .burgerMenu{
   height: 100%;
   width: auto;
   background-size: contain;
-  padding: 0;
+  padding-right: 10%;
   cursor: pointer;
   background-color: transparent !important;
   border-radius: 50%;
@@ -61,12 +60,12 @@
   justify-content: flex-end;
 }
 
-.light .linkContainer a {
-  color: var(--text-primary-lm);
+.light .linkContainer {
+  color: var(--black);
 }
 
-.dark .linkContainer a {
-  color: var(--text-primary-dm);
+.dark .linkContainer {
+  color: var(--white);
 }
 
 @media (max-width: 1350px) {
@@ -83,14 +82,9 @@
     align-items: center;
   }
 
-  /* .overlay{
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .nonOverlay{
+  .overlay{
     display: none;
-  } */
+  }
 
   .linkContainer {
         gap: 1.325rem
@@ -105,7 +99,7 @@
 
   .overlay{
     display: flex;
-    justify-content: center;
+    justify-content: right;
   }
 
   .nonOverlay{
@@ -113,12 +107,12 @@
   }
 
   .linkContainer {
-    gap: 2rem; /* Further reduced gap */
+    gap: 2rem;
   }
 
   .header > div:first-child,
   .header > div:last-child {
-    flex: 0 1 auto; /* Adjust flex to accommodate smaller screens */
+    flex: 0 0 auto;
   }
 }
 
@@ -126,23 +120,23 @@
   .header {
     padding-top: 0.75em;
     padding-bottom: 0.75em;
-    flex-wrap: wrap; /* Allow wrapping for very small screens */
+    flex-wrap: wrap;
   }
 
   .linkContainer {
-    flex: 1 0 100%; /* Full width on small screens */
-    order: 3; /* Move links to bottom */
-    justify-content: space-around; /* Spread links evenly */
-    gap: 1rem; /* Minimal gap */
-    margin-top: 0.5em; /* Add some space above links */
+    flex: 1 0 100%;
+    order: 3;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 0.5em;
   }
 
   .header > div:first-child,
   .header > div:last-child {
-    flex: 1 0 auto; /* Allow these to take necessary space */
+    flex: 0 0 auto;
   }
 
   .header > div:last-child {
-    justify-content: flex-end; /* Ensure right alignment */
+    justify-content: flex-end;
   }
 }

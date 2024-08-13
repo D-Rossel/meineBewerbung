@@ -24,4 +24,12 @@
 .h3_backgroundLightmode{
   color:black;
 }
-  
+
+@media (max-width: 430px) {
+
+  .h3_backgroundDarkmode, .h3_backgroundLightmode {
+    
+    padding-top: 40px;
+    font-size: x-large;
+  }
+}

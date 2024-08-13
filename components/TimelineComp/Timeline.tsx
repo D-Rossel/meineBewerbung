@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './Timeline.module.css';
 import { useThemeContext } from "@/context/ThemeContext";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
@@ -7,8 +7,11 @@ import Praktikum from "@/public/Icons/praktikum.svg"
 import School from "@/public/Icons/school.svg"
 import Work from "@/public/Icons/work.svg"
   
+
 export default function Timeline() {
   const { theme } = useThemeContext();
+  const [isMobile, setIsMobile] = useState(false);
+
   const boxL = {
     background:  '#DCDCDC',
     color: '#000',
@@ -45,6 +48,24 @@ export default function Timeline() {
   }
 
   
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 1200);
+    };
+
+    // Initial check
+    checkIsMobile();
+
+    // Add event listener to window resize
+    window.addEventListener('resize', checkIsMobile);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', checkIsMobile);
+    };
+  }, []);
+
+  
 
   return(
   <div className={styles.container}>
@@ -52,18 +73,7 @@ export default function Timeline() {
     <div className={styles.ueb}>
       <h3 className={theme === "light" ? styles.h3_backgroundLightmode : styles.h3_backgroundDarkmode}>Schulischer Werdegang</h3>            
     </div>
-    <VerticalTimeline>
-      <VerticalTimelineElement
-      className="vertical-timeline-element--education"
-      contentStyle={theme === "light" ? boxL : boxD}
-      date="2000 - 2004"
-      iconStyle={theme === "light" ? circleL : circleD}
-      contentArrowStyle={theme === "light" ? arrowL : arrowD}
-      icon={<School/>}
-    >
-      <h3 className="vertical-timeline-element-title">Grundschule, Sonnenschule</h3>
-      <h4 className="vertical-timeline-element-subtitle">Ziegelhüttenweg, 65232 Taunusstein</h4>
-    </VerticalTimelineElement>
+    <VerticalTimeline animate={!isMobile}>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           contentStyle={theme === "light" ? boxL : boxD}
@@ -128,7 +138,7 @@ export default function Timeline() {
       <h3 className={theme === "light" ? styles.h3_backgroundLightmode : styles.h3_backgroundDarkmode}>Praktika</h3>            
     </div>
 
-  <VerticalTimeline>
+  <VerticalTimeline animate={!isMobile}>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
         contentStyle={theme === "light" ? boxL : boxD}
@@ -152,7 +162,7 @@ export default function Timeline() {
   <div className={styles.ueb}>
     <h3 className={theme === "light" ? styles.h3_backgroundLightmode : styles.h3_backgroundDarkmode}>Nebentätigkeiten</h3>            
   </div>
-  <VerticalTimeline>
+  <VerticalTimeline animate={!isMobile}>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
         contentStyle={theme === "light" ? boxL : boxD}
@@ -222,5 +232,3 @@ export default function Timeline() {
   </div>
   )
 }
-  
-  

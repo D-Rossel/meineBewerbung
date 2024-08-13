@@ -48,10 +48,14 @@ body, html {
   margin: 0;
   padding: 0;
   overscroll-behavior: none;
+  scroll-behavior: smooth;
 }
 
 /* FONTS */
 
+textPath{
+  font-family: "Roboto-Regular", sans-serif;  
+}
 
 h1 {
   font-family: "Roboto-Regular", sans-serif;
@@ -113,7 +117,7 @@ p.medium, span.medium, textarea.medium, button.medium, button {
 p.tagline-medium, span.tagline-medium, .tagline-medium , label.tagline-medium{
   font-family:  "Roboto-Regular", sans-serif;
   font-size: 1.45em;
-  line-height: 3.0em;
+  /* line-height: 3.0em; */
   text-decoration: none;
 }
 
@@ -125,12 +129,12 @@ p.tagline-regular, span.tagline-regular, .tagline-regular {
   text-decoration: none;
 }
 
-a {
+Link {
   text-decoration: none;
 }
 
 /* COPY-INLINE-LINK */
-a.inline-link {
+Link.inline-link {
   font-family:  "Roboto-Regular", sans-serif;
   font-size: 2em;/*1.5em; /* 24px */
   font-style: normal;
@@ -149,11 +153,11 @@ li{
   font-style: normal;
 }
 
-a:hover {
+Link:hover {
   opacity: 0.5;
 }
 
-a:visited {
+Link:visited {
   color: inherit;
 }
 
@@ -199,7 +203,7 @@ a:visited {
   textarea,
   label,
   input,
-  a.inline-link {
+  Link.inline-link {
     font-size: 1.25em; /* 20px */
     line-height: 1.5em; /* 24px */
   }
@@ -237,7 +241,7 @@ a:visited {
   textarea,
   label,
   input,
-  a.inline-link {
+  Link.inline-link {
     font-size: 1.25em; /* 20px */
     line-height: 1.75em; /* 28px */
   }
@@ -275,7 +279,7 @@ a:visited {
   textarea,
   label,
   input,
-  a.inline-link {
+  Link.inline-link {
     font-size: 1.125em; /* 18px */
     line-height: normal;
   }

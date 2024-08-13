@@ -6,3 +6,6 @@
     color: var(--black);
 }
   
+.container{
+    padding-top: 3rem;
+}

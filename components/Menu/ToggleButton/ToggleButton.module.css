@@ -1,7 +1,7 @@
 .background {
   display: flex;
-  width: 5.5em; /* 88px */
-  height: 3em; /* 48px; */
+  width: 5.5em;
+  height: 3em;
   justify-content: flex-end;
   align-items: center;
   flex-shrink: 0;
@@ -23,8 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50px;
   transition: transform 0.3s ease;
   position: relative;
@@ -76,4 +76,73 @@
   width: 20px;
   height: 20px;
   border: none; /* Entfernt jegliche Ränder */
+}
+
+/* Media Queries für weitere Anpassungen */
+@media (max-width: 1280px) and (max-height: 800px) {
+  .background {
+    width: 3.5em;
+    height: 2em;
+  }
+
+  .buttonContainer {
+    width: 24px;
+    height: 24px;
+  }
+
+  .img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+  .background {
+    width: 3.2em;
+    height: 1.9em;
+  }
+
+  .buttonContainer {
+    width: 22px;
+    height: 22px;
+  }
+
+  .img {
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media (max-width: 768px) {
+  .background {
+    width: 3em;
+    height: 1.8em;
+  }
+
+  .buttonContainer {
+    width: 20px;
+    height: 20px;
+  }
+
+  .img {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    width: 2.8em;
+    height: 1.7em;
+  }
+
+  .buttonContainer {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+
+  .img {
+    width: 9px;
+    height: 9px;
+  }
 }
