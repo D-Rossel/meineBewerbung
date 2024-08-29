@@ -1,7 +1,6 @@
 {
-    "prefixes": [
-      "sva",
-      "aoe",
-      "beispielfirma"
-    ]
-  }
+  "prefixes": [
+    "aoe",
+    "beispielfirma"
+  ]
+}
