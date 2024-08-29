@@ -1,0 +1,27 @@
+.menuButton {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.dark {
+    color: var(--white) !important;
+}
+
+.light {
+    color: var(--black) !important;
+}
+
+.externalLinkIcon {
+    margin-left: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.dark .externalLinkIcon path {
+    fill: var(--white);
+}
+
+.light .externalLinkIcon path {
+    fill: var(--black);
+}

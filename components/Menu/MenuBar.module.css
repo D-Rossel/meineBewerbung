@@ -60,11 +60,11 @@
   justify-content: flex-end;
 }
 
-.light .linkContainer {
+.light ,.linkContainer {
   color: var(--black);
 }
 
-.dark .linkContainer {
+.dark ,.linkContainer{
   color: var(--white);
 }
 

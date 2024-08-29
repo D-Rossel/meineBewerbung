@@ -3,6 +3,7 @@ import styles from '@/pages/page_css/notenspigel.module.css';
 import { useThemeContext } from '@/context/ThemeContext';
 
 const data = [
+  ["0","Notendurchschnitt", "Alle bestandenen Fächer", 151, "2,3"],
   ["1","Einführung in die Medieninformatik", "Calvus", 5, "2,0"],
   ["1","Programmieren 1", "Berdux", 7, "2,0"],
   ["1","Einführung in die Gestaltung", "Pedersen", 8, "3,0"],
@@ -22,11 +23,11 @@ const data = [
   ["4","Softwaretechnik", "Weitz", 6, "3,0"],
   ["4","Animation", "Ederer", 6, "1,7"],
   ["4","Rechnernetze und Betriebssysteme", "Schaible", 6, "2,0"],
+  ["4","Computergrafik", "Schwanecke", 6, "3,7"],
   ["5","Softwaretechnik-Projekt", "Weitz", 10, "2,0"],
   ["5","Mensch-Computer-Interaktion", "Berdux", 6, "2,0"],
-  ["4","Computergrafik", "Schwanecke", 6, "NE"],
+  ["5","Web-Engineering", "Hoyer, Heide", 10, "1,3"],
   ["4","Webbasierte Anwendungen ", "Weitz", 6, "NE"],
-  ["5","Web-Engineering", "Hoyer, Heide", 10, "NE"],
   ["5","Wahlmodul B", "_", 5, "NA"],
   ["7","Portfolio", "Berdux", 10, "NE"],
   ["6","Berufspraktische Tätigkeit", "Weitz", 30, "U"],

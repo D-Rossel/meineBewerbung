@@ -108,16 +108,13 @@ p, span, textarea, label, input{
   /* margin: 0; */
 }
 
-/* COPY MEDIUM */
-p.medium, span.medium, textarea.medium, button.medium, button {
-  font-family:  "Roboto-Regular", sans-serif;
-}
+
 
 /* TAGLINE MEDIUM */
 p.tagline-medium, span.tagline-medium, .tagline-medium , label.tagline-medium{
   font-family:  "Roboto-Regular", sans-serif;
   font-size: 1.45em;
-  /* line-height: 3.0em; */
+  line-height: 3.0em;
   text-decoration: none;
 }
 
@@ -136,20 +133,20 @@ Link {
 /* COPY-INLINE-LINK */
 Link.inline-link {
   font-family:  "Roboto-Regular", sans-serif;
-  font-size: 2em;/*1.5em; /* 24px */
+  font-size: 2em;
   font-style: normal;
-  line-height: 2em; /* 32px */
+  line-height: 2em;
 }
 
 td, th {
   font-family:  "Roboto-Regular", sans-serif;
-  font-size: 1em; /* 24px */
+  font-size: 1em; 
   font-style: normal;
 }
 
 li{
   font-family:  "Roboto-Thin", sans-serif;
-  font-size: 1em; /* 24px */
+  font-size: 1em;
   font-style: normal;
 }
 
@@ -164,7 +161,7 @@ Link:visited {
 /* SPACINGS */
 
 .section-spacing-lr {
-  padding: 0 5vw; /* 100px l/r */
+  padding: 0 5vw;
 }
 
 .no-margin {
@@ -286,7 +283,7 @@ Link:visited {
 
   p.tagline-medium,
   span.tagline-medium,
-  .tagline-medium,
+  Link.tagline-medium,
   label.tagline-medium,
   p.tagline-regular,
   span.tagline-regular,

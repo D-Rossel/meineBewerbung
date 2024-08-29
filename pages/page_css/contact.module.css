@@ -20,7 +20,7 @@
 }
 
 .contactInfo {
-  padding: 10rem;
+  padding-top: 10rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -68,14 +68,15 @@
 
 .me {
   background-image: url("../../public/Images/me.png");
-  width: 700px;
-  height: 800px;
+  width: 500px;
+  height: 600px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-origin: content-box;
   right: 0;
   padding-left: 5rem;
+  padding-top: 5rem;
 }
 
 .mecontainer {

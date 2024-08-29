@@ -31,7 +31,7 @@ export default function Menu() {
                         <button className={styles.burgerMenu} onClick={toggleOverlay}> {whichBurgerMenu(theme)} </button> 
                         <Overlay isVisible={isOverlayVisible} onClose={toggleOverlay} /> 
                     </div>
-                    <div className={`${styles.linkContainer} ${styles.nonOverlay}`}> 
+                    <div className={`${styles.linkContainer} ${styles.nonOverlay} ${theme === 'dark' ? styles.dark : styles.light}`}> 
                         <MenuButton link="/" buttonText="Home" /> 
                         <MenuButton link="/anschreiben" buttonText="Anschreiben" /> 
                         <MenuButton link="/lebenslauf" buttonText="Lebenslauf" /> 
@@ -43,7 +43,7 @@ export default function Menu() {
                         </div> 
                     </div> 
                 </div> 
-            </div> 
+            </div>
         </div>
     );
 }

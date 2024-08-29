@@ -5,7 +5,7 @@ interface TypewriterTextProps {
   speed?: number;
 }
 
-function TypewriterText({ text, speed = 60 }: TypewriterTextProps) {
+function TypewriterText({ text, speed = 90 }: TypewriterTextProps) {
   const [displayedText, setDisplayedText] = useState('');
 
   useEffect(() => {

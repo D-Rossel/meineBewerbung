@@ -1,6 +1,14 @@
 {
+<<<<<<< HEAD
   "prefixes": [
     "aoe",
     "beispielfirma"
   ]
 }
+=======
+    "prefixes": [
+      "aoe",
+      "beispielfirma"
+    ]
+  }
+>>>>>>> d030b95d0aa3248d4435906dac7cc1d1ae94fb36

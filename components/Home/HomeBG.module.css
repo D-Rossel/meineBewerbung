@@ -83,6 +83,7 @@
   .contentContainer {
     flex-direction: column;
     padding: 0 3%;
+    height: 100vh;
   }
 
   .textContainer {

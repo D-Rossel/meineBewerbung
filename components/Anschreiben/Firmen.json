@@ -1,56 +1,75 @@
 {
-    "bewerber": {
-      "name": " David Rossel",
-      "strasse": "Oestricher Straße 18",
-      "plz": "65197",
+  "bewerber": {
+    "name": " David Rossel",
+    "strasse": "Oestricher Straße 18",
+    "plz": "65197",
+    "ort": "Wiesbaden",
+    "telefon": "0163 2357276",
+    "email": [
+      "david.rossel@gmx.de",
+      "david.rossel@student.hs-rm.de"
+    ]
+  },
+  "firmen": {
+    "sva": {
+      "name": "SVA System Vertrieb Alexander GmbH",
+      "strasse": "Borsigstraße 26",
+      "plz": "65205",
       "ort": "Wiesbaden",
-      "telefon": "0163 2357276",
-      "email": [
-        "david.rossel@gmx.de",
-        "david.rossel@student.hs-rm.de"
-      ]
+      "anschreiben": {
+        "datum": "15. Juli 2024",
+        "betreff": "Bewerbung für ein Pflichtpraktikum im Bereich Web-Anwendungen",
+        "anrede": "Sehr geehrte Damen und Herren,",
+        "inhalt": [
+          "auf dem Firmenkontakttag der Hochschule RheinMain am 26. Juni 2024 hatte ich die Gelegenheit, einige Ihrer Mitarbeiter kennenzulernen. Die Gespräche waren sehr angenehm und haben mein Interesse an Ihrem Unternehmen geweckt, weshalb ich mich für ein Pflichtpraktikum bei Ihnen bewerbe.",
+          "Im Rahmen meines Studiums der Medieninformatik an der Hochschule RheinMain ist ein Pflichtpraktikum über 800 Arbeitsstunden vorgesehen. Dieses Praktikum möchte ich gerne bei Ihnen absolvieren, um meine theoretischen Kenntnisse in der Praxis zu vertiefen und viele neue Dinge zu lernen.",
+          "Während meines Studiums konnte ich mich bereits mit modernen Web-Technologien befassen und dabei Kenntnisse in React, Vue.js und Spring erwerben. Ich habe interaktive Benutzeroberflächen und Single-Page-Applications mit React entwickelt, Front-End-Anwendungen mittels Vue.js erstellt sowie Backend-Services und APIs unter Verwendung von Spring implementiert. Diese praktische Auseinandersetzung hat nicht nur mein Verständnis für Webanwendungen erheblich vertieft, sondern auch mein Interesse an der Softwareentwicklung gesteigert.",
+          "Ich bin überzeugt, dass ich mit meiner bisherigen Erfahrung und meiner schnellen Auffassungsgabe einen wertvollen Beitrag zu Ihren Projekten leisten kann. Darüber hinaus bin ich motiviert, Neues zu lernen und mich den Herausforderungen in einem professionellen Umfeld zu stellen.",
+          "Über eine Einladung zu einem persönlichen Gespräch freue ich mich sehr."
+        ],
+        "grussformel": "Mit freundlichen Grüßen,",
+        "unterschrift": "David Rossel"
+      }
     },
-    "firmen": {
-      "sva": {
-        "name": "SVA System Vertrieb Alexander GmbH",
-        "strasse": "Borsigstraße 26",
-        "plz": "65205",
-        "ort": "Wiesbaden",
-        "anschreiben": {
-          "datum": "15. Juli 2024",
-          "betreff": "Bewerbung für ein Pflichtpraktikum im Bereich Web-Anwendungen",
-          "anrede": "Sehr geehrte Damen und Herren,",
-          "inhalt": [
-            "auf dem Firmenkontakttag der Hochschule RheinMain am 26. Juni 2024 hatte ich die Gelegenheit, einige Ihrer Mitarbeiter kennenzulernen. Die Gespräche waren sehr angenehm und haben mein Interesse an Ihrem Unternehmen geweckt, weshalb ich mich für ein Pflichtpraktikum bei Ihnen bewerbe.",
-            "Im Rahmen meines Studiums der Medieninformatik an der Hochschule RheinMain ist ein Pflichtpraktikum über 800 Arbeitsstunden vorgesehen. Dieses Praktikum möchte ich gerne bei Ihnen absolvieren, um meine theoretischen Kenntnisse in der Praxis zu vertiefen und viele neue Dinge zu lernen.",
-            "Während meines Studiums konnte ich mich bereits mit modernen Web-Technologien befassen und dabei Kenntnisse in React, Vue.js und Spring erwerben. Ich habe interaktive Benutzeroberflächen und Single-Page-Applications mit React entwickelt, Front-End-Anwendungen mittels Vue.js erstellt sowie Backend-Services und APIs unter Verwendung von Spring implementiert. Diese praktische Auseinandersetzung hat nicht nur mein Verständnis für Webanwendungen erheblich vertieft, sondern auch mein Interesse an der Softwareentwicklung gesteigert.",
-            "Ich bin überzeugt, dass ich mit meiner bisherigen Erfahrung und meiner schnellen Auffassungsgabe einen wertvollen Beitrag zu Ihren Projekten leisten kann. Darüber hinaus bin ich motiviert, Neues zu lernen und mich den Herausforderungen in einem professionellen Umfeld zu stellen.",
-            "Über eine Einladung zu einem persönlichen Gespräch freue ich mich sehr."
-          ],
-          "grussformel": "Mit freundlichen Grüßen,",
-          "unterschrift": "David Rossel"
-        }
-      },
-      "beispielfirma": {
-        "name": "Beispiel GmbH",
-        "strasse": "Musterstraße 123",
-        "plz": "12345",
-        "ort": "Musterstadt",
-        "anschreiben": {
-          "datum": "20. Juli 2024",
-          "betreff": "Bewerbung für ein Praktikum in der Softwareentwicklung",
-          "anrede": "Sehr geehrte Damen und Herren,",
-          "inhalt": [
-            "mit großem Interesse habe ich Ihr Stellenangebot für ein Praktikum in der Softwareentwicklung auf Ihrer Webseite gelesen. Als Student der Medieninformatik an der Hochschule RheinMain bin ich auf der Suche nach einer Praktikumsstelle, bei der ich meine theoretischen Kenntnisse in der Praxis anwenden und erweitern kann.",
-            "Während meines Studiums habe ich umfangreiche Erfahrungen in der Webentwicklung gesammelt, insbesondere mit Technologien wie React, Vue.js und Spring. Ich habe an verschiedenen Projekten gearbeitet, die von der Entwicklung interaktiver Benutzeroberflächen bis hin zur Implementierung von Backend-Services und APIs reichten.",
-            "Ihre Firma hat mich besonders angesprochen, da Sie innovative Lösungen im Bereich der digitalen Transformation entwickeln. Ich bin überzeugt, dass ich mit meinem technischen Verständnis und meiner Lernbereitschaft einen wertvollen Beitrag zu Ihren Projekten leisten kann.",
-            "Ich würde mich sehr freuen, mein Pflichtpraktikum bei Ihnen absolvieren zu dürfen und mehr über die praktische Anwendung moderner Softwareentwicklungsmethoden in einem professionellen Umfeld zu lernen.",
-            "Über die Möglichkeit eines persönlichen Gesprächs würde ich mich sehr freuen.",
-            "Vielen Dank für Ihre Zeit und Beachtung meiner Bewerbung."
-          ],
-          "grussformel": "Mit freundlichen Grüßen,",
-          "unterschrift": "David Rossel"
-        }
+    "beispielfirma": {
+      "name": "Beispiel GmbH",
+      "strasse": "Musterstraße 123",
+      "plz": "12345",
+      "ort": "Musterstadt",
+      "anschreiben": {
+        "datum": "20. Juli 2024",
+        "betreff": "Bewerbung für ein Praktikum in der Softwareentwicklung",
+        "anrede": "Sehr geehrte Damen und Herren,",
+        "inhalt": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        ],
+        "grussformel": "Mit freundlichen Grüßen,",
+        "unterschrift": "David Rossel"
+      }
+    },
+    "aoe": {
+      "name": "AOE GmbH",
+      "strasse": "LuisenForum, Kirchgasse 6",
+      "plz": "65185",
+      "ort": "Wiesbaden",
+      "telefon": "+49 6122 70707-0",
+      "fax": "+49 6122 70707-199",
+      "website": "www.aoe.com",
+      "email": "contact-de@aoe.com",
+      "anschreiben": {
+        "datum": "29. August 2024",
+        "betreff": "Bewerbung für ein Pflichtpraktikum",
+        "anrede": "Sehr geehrte Damen und Herren,",
+        "inhalt": [
+          "im Rahmen meines Studiums der Medieninformatik an der Hochschule RheinMain hat das von Ihren Mitarbeitenden Michael Heide und Ansgar Hoyer durchgeführte Wahlpflichtmodul „Web-Engineering“ mein Interesse an Ihrer Firma geweckt. Darüber hinaus habe ich die Präsenz von AOE auf dem Firmenkontakttag der Hochschule am 26.06.2024 als sehr positiv empfunden.",
+          "Daher bewerbe ich mich hiermit bei Ihnen für ein Pflichtpraktikum über 800 Stunden, welches ich ab November beginnen möchte. Das Praktikum möchte ich nutzen, um meine theoretischen Kenntnisse zu vertiefen und neben den Projekten an der Hochschule weitere praktische Erfahrungen zu sammeln. Insbesondere interessiere ich mich für den Bereich Frontend-Entwicklung. Darüber hinaus möchte ich AOE als Arbeitgeber kennenlernen.",
+          "Während meines Studiums konnte ich mich bereits mit modernen Web-Technologien befassen und dabei Kenntnisse in React, Vue.js und Spring erwerben. Ich habe interaktive Benutzeroberflächen und Single-Page-Applications mit React entwickelt, Front-End-Anwendungen mittels Vue.js erstellt sowie Backend-Services und APIs unter Verwendung von Spring implementiert. Diese Projekte haben nicht nur mein Verständnis für Webanwendungen erheblich vertieft, sondern auch mein Interesse an der Softwareentwicklung gesteigert.",
+          "Ich bin überzeugt, dass ich mit dieser bisherigen Erfahrung und meiner schnellen Auffassungsgabe einen wertvollen Beitrag zu Ihren Projekten leisten kann. Darüber hinaus bin ich motiviert, Neues zu lernen und Einblicke in die Herausforderungen in einem professionellen Umfeld zu erhalten.",
+          "Über eine Einladung zu einem persönlichen Gespräch freue ich mich sehr."
+        ],
+        "grussformel": "Mit freundlichen Grüßen,",
+        "unterschrift": "David Rossel"
       }
     }
   }
+}

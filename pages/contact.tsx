@@ -33,7 +33,7 @@ export default function Contact() {
                     <div className={styles.contactItem}>
                         <FaPhone className={styles.contactIcon} />
                         <div className={styles.contactText}>
-                            <p>0163 2357276</p>
+                            <p><a href="tel:+491632357276">0163 2357276</a></p>
                         </div>
                     </div>
                 </div>

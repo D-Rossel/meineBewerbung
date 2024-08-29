@@ -31,17 +31,15 @@
   font-size: x-large;
 }
 
-.light{
+.light .overlay{
   color: var(--black);
 }
 
-.dark{
+.dark .overlay{
   color: var(--white)
 }
 
 
-
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .closeButton{
     width: 5%;
@@ -50,12 +48,12 @@
 
 @media (max-width: 768px) {
   .closeButton{
-    width: 7%;
+    width: 8%;
   }
 }
 
 @media (max-width: 430px) {
   .closeButton{
-    width: 8%;
+    width: 12%;
   }
 }

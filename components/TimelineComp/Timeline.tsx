@@ -11,6 +11,7 @@ import Work from "@/public/Icons/work.svg"
 export default function Timeline() {
   const { theme } = useThemeContext();
   const [isMobile, setIsMobile] = useState(false);
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
 
   const boxL = {
     background:  '#DCDCDC',
@@ -65,6 +66,23 @@ export default function Timeline() {
     };
   }, []);
 
+  useEffect(() => {
+    const checkReducedMotion = () => {
+      const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+      setPrefersReducedMotion(mediaQuery.matches);
+  
+      const handleChange = (e: { matches: boolean | ((prevState: boolean) => boolean); }) => {
+        setPrefersReducedMotion(e.matches);
+      };
+  
+      mediaQuery.addEventListener('change', handleChange);
+      return () => mediaQuery.removeEventListener('change', handleChange);
+    };
+  
+    // Initial check
+    checkReducedMotion();
+  }, []);
+
   
 
   return(
@@ -73,7 +91,7 @@ export default function Timeline() {
     <div className={styles.ueb}>
       <h3 className={theme === "light" ? styles.h3_backgroundLightmode : styles.h3_backgroundDarkmode}>Schulischer Werdegang</h3>            
     </div>
-    <VerticalTimeline animate={!isMobile}>
+    <VerticalTimeline animate={!isMobile && !prefersReducedMotion}>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
           contentStyle={theme === "light" ? boxL : boxD}
@@ -138,7 +156,7 @@ export default function Timeline() {
       <h3 className={theme === "light" ? styles.h3_backgroundLightmode : styles.h3_backgroundDarkmode}>Praktika</h3>            
     </div>
 
-  <VerticalTimeline animate={!isMobile}>
+  <VerticalTimeline animate={!isMobile && !prefersReducedMotion}>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
         contentStyle={theme === "light" ? boxL : boxD}
@@ -162,7 +180,7 @@ export default function Timeline() {
   <div className={styles.ueb}>
     <h3 className={theme === "light" ? styles.h3_backgroundLightmode : styles.h3_backgroundDarkmode}>Nebentätigkeiten</h3>            
   </div>
-  <VerticalTimeline animate={!isMobile}>
+  <VerticalTimeline animate={!isMobile && !prefersReducedMotion}>
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
         contentStyle={theme === "light" ? boxL : boxD}
